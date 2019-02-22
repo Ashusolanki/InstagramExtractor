@@ -3,8 +3,7 @@ Instagram Extractor Download Videos
 Android based Instagram url extractor
 =======================================================
 
-These are the urls to the YouTube video or audio files, so you can stream or download them.
-It features an age verification circumvention and a signature deciphering method (mainly for vevo videos).
+These are the urls to the Instagram Video files, so you can stream or download them.
 
 * Builds: [![JitPack](https://jitpack.io/v/Ashusolanki/InstagramExtractor.svg)](https://jitpack.io/#Ashusolanki/InstagramExtractor)
 
@@ -20,16 +19,19 @@ repositories {
 
 And the dependency:
 
-```dependencies {
-	        implementation 'com.github.Ashusolanki:InstagramExtractor:0.0.1'
-	}
+```
+dependencies 
+ {
+      implementation 'com.github.Ashusolanki:InstagramExtractor:0.0.1'
+ }
 ```  
 
 ## Usage
 
 ```
 
-new InstagramExtractor() {
+new InstagramExtractor() 
+{
                 @Override
                 protected void onExtractionComplete(InstagramFile vimeoFile) {
                     //Exrtaction Complete
@@ -39,7 +41,7 @@ new InstagramExtractor() {
                 protected void onExtractionFail(String Error) {
                   //Extraction Fail
                 }
-            }.Extractor(this.getActivity(), videoURL);
+ }.Extractor(this.getActivity(), videoURL);
 
 
 ```
